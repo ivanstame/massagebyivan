@@ -1,0 +1,906 @@
+@font-face {
+    font-family: Palm-Canyon;
+    src: url(fonts/PalmCanyonDrive.eot);
+    src: url(fonts/PalmCanyonDrive.otf) format('opentype')
+}
+
+:root {
+    background: #fafafa;
+    font-size: calc(1vw + .6rem);
+    font-family: brandon-grotesque, sans-serif;
+    color: #fff;
+    box-sizing: border-box;
+    --h1-size: 2.5rem;
+    --h2-size: 2rem;
+    --h3-size: 1.5rem;
+    --h4-size: 1.2rem
+}
+
+:root p {
+    font-family: brandon-grotesque, sans-serif
+}
+
+:root button {
+    font-family: brandon-grotesque, sans-serif
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0 !important;
+}
+
+a {
+    text-decoration: none
+}
+
+a:link {
+    color: #fff
+}
+
+a:visited {
+    color: #fff
+}
+
+h1 {
+    font-size: var(--h1-size)
+}
+
+h2 {
+    font-size: var(--h2-size)
+}
+
+h3 {
+    font-size: var(--h3-size)
+}
+
+h4 {
+    font-size: var(--h4-size)
+}
+
+ul {
+  list-style: none !important;
+}
+
+.address {
+    color: #302f35
+}
+
+.address:visited {
+    color: #302f35
+}
+
+.address:link {
+    color: #302f35
+}
+
+.call-me {
+    color: #387c7e
+}
+
+.call-me:visited {
+    color: #387c7e
+}
+
+.call-me:link {
+    color: #387c7e
+}
+
+.slideBodyOver {
+    transform: translateX(-50%);
+    filter: brightness(40%)
+}
+
+.bodyframe {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100vh auto 60vh 30vh;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+    background: #6196a1;
+    position: fixed;
+    top: 0;
+    text-align: right;
+    z-index: 99
+}
+
+header .logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: 0 auto
+}
+
+header .logo-container img {
+    width: 8rem
+}
+
+header .icon {
+    display: inline-block;
+    background: #6196a1;
+    padding: 1.5rem;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%)
+}
+
+header .icon .hamburger {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 2px;
+    width: calc(5vw + .8rem);
+    background: #fff;
+    transition: all .2s linear
+}
+
+header .hamburger::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: -.8rem;
+    transition: all .35s linear
+}
+
+header .hamburger::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: .8rem;
+    transition: all .35s linear
+}
+
+.icon.shift .hamburger {
+    box-shadow: none;
+    background: 0 0
+}
+
+.icon.shift .hamburger::before {
+    top: 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg)
+}
+
+.icon.shift .hamburger::after {
+    top: 0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg)
+}
+
+header nav {
+    display: none
+}
+
+.main-menu {
+    position: fixed;
+    left: 0px;
+    z-index: 1;
+    height: 85vh;
+    width: 100%;
+    padding-top: 10vh;
+    -moz-transform: translate(100%, 0vh);
+    -webkit-transform: translate(100%, 0vh);
+    -ms-transform: translate(100%, 0vh);
+    transform: translate(100%, 0vh);
+    top: 15vh;
+    margin: 0 auto;
+    background: #6196a1;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.main-menu .options-container {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    height: 50%;
+    align-items: flex-end;
+    font-size: calc(1vw + 1.3rem);
+    padding-left: 3rem;
+    list-style: none;
+}
+
+.main-menu .options-container li {
+    position: relative;
+    height: calc(1vw + 1.3rem);
+    transition: all .6s linear;
+    list-style: none !important;
+}
+
+.main-menu .options-container .rhl-link {
+    text-align: right;
+    margin-bottom: 7.5vh
+}
+
+.main-menu a {
+    outline-width: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+.slide-in {
+    transform: translate(50%, 0vh);
+    -webkit-transform: translate(50%, 0vh);
+    -ms-transform: translate(50%, 0vh);
+    -moz-transform: translate(50%, 0vh);
+    overflow: hidden
+}
+
+.noScroll {
+    overflow: hidden
+}
+
+.hero-area {
+    background: #feffed url(../img/vintageherofinalcaptionmobile.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center
+}
+
+.hero-area .caption {
+    position: absolute;
+    text-align: center;
+    width: 90%;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around
+}
+
+.hero-area .caption a {
+    color: unset
+}
+
+.hero-area .caption h2 {
+    letter-spacing: 0;
+    margin-bottom: 1rem;
+    color: #9e8477;
+    font-family: Palm-Canyon, cursive;
+    text-shadow: none;
+    font-weight: 400;
+    font-size: var(--h1-size);
+    cursor: pointer
+}
+
+.page-copy {
+    grid-row: 2;
+    display: flex;
+    flex-flow: column;
+    justify-content: top;
+    align-items: center;
+    background-image: unset;
+    background: #fafafa;
+    padding: 5rem;
+    color: #35474e
+}
+
+.page-copy .features-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5rem
+}
+
+.page-copy .features-container .feature {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+.page-copy .features-container .feature:not(:last-of-type) {
+    margin-bottom: 5rem
+}
+
+.page-copy .features-container .feature img {
+    width: 75%
+}
+
+.page-copy .features-container .feature h3 {
+    font-weight: 600
+}
+
+.page-copy .features-container .feature p {
+    margin-top: 2rem;
+    line-height: 1.5
+}
+
+.style-two {
+    border: 0;
+    height: 1px;
+    width: 75%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0));
+    margin-bottom: 5rem
+}
+
+.page-copy button {
+    border: 1px solid #4c535a;
+    padding: 1.25rem 3rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: #363b40;
+    background: rgba(76, 83, 90, .1);
+    display: flex;
+    flex-flow: column;
+    justify-content: center
+}
+
+.testimonials {
+    display: block;
+    grid-row: 3;
+    background: url(../img/sarlandmuscles.jpg);
+    background-position: center
+}
+
+.testimonials .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.testimonials .overlay .quote-box {
+    display: table;
+    border-spacing: .5rem;
+    width: 80%;
+    margin-bottom: 30px
+}
+
+.testimonials .overlay .quote-box img {
+    width: 2rem;
+    float: left;
+    padding: 0 10px 0 0
+}
+
+.testimonials .overlay .quote-box p {
+    display: table-cell;
+    line-height: 1.75;
+    padding-top: 1rem;
+    font-size: 1.05rem;
+    margin-bottom: 1rem
+}
+
+.testimonials .overlay .quote-box cite {
+    font-size: 1.3rem;
+    display: table-row;
+    white-space: nowrap;
+    text-align: right;
+    color: #fafafa;
+    font-style: italic
+}
+
+.testimonials .overlay .quote-link-box a h4 {
+    position: relative;
+    color: #fafafa
+}
+
+.testimonials .overlay .quote-link-box a h4::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 80%;
+    height: 2px;
+    top: 110%;
+    background: #fafafa;
+    left: 50%;
+    transform: translatex(-50%)
+}
+
+footer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background: #356974;
+    padding: 1.5rem 1rem;
+    font-family: Karla, sans-serif
+}
+
+footer .ft-content-container {
+    width: 75%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center
+}
+
+footer .ft-content-container .ft-links {
+    width: 60%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin-bottom: 1rem
+}
+
+footer .ft-content-container .ft-links li {
+    font-size: var(--h2-size)
+}
+
+footer .ft-content-container .ft-contact {
+    letter-spacing: 1px;
+    padding-bottom: .75rem;
+    line-height: 1.3;
+    font-size: .95rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center
+}
+
+footer .ft-content-container .ft-contact span {
+    position: relative;
+    color: #8fdded
+}
+
+footer .ft-content-container .ft-contact span::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 100%;
+    height: 1px;
+    background: #778899;
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%)
+}
+
+footer #copyright {
+    font-size: .85rem;
+    text-align: center
+}
+
+footer .intouch {
+    color: #8fdded
+}
+
+@media only screen and (min-width:30.1em) and (max-width:61.99em) and (orientation:landscape) {
+    :root {
+        background: #fafafa;
+        font-size: calc(1vw + .4rem);
+        font-family: brandon-grotesque, sans-serif;
+        color: #fff;
+        box-sizing: border-box;
+        --h1-size: 2.5rem;
+        --h2-size: 2rem;
+        --h3-size: 1.5rem;
+        --h4-size: 1.2rem
+    }
+    .bodyframe {
+        margin-top: 15vh;
+        grid-template-rows: 85vh auto 70vh 30vh;
+
+    }
+    header {
+        width: 100%;
+        height: 15vh;
+        background: #6196a1;
+        position: fixed;
+        top: 0;
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-end;
+        align-items: center
+    }
+    header .logo-container {
+        left: 15%
+    }
+    header .logo-container img {
+        width: 6.5rem
+    }
+    header .icon {
+        display: none
+    }
+    header .icon .hamburger {
+        display: none
+    }
+    header .icon .hamburger::before {
+        display: none
+    }
+    header .icon .hamburger::after {
+        display: none
+    }
+    header nav {
+        display: block;
+        width: 70%
+    }
+    header nav ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+    }
+    header nav ul a {
+        display: inline-block;
+        font-size: .7rem;
+        font-family: brandon-grotesque, sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px
+    }
+    header nav ul a:last-of-type {
+        margin-right: 0
+    }
+    .hero-area {
+        grid-row: 1;
+        height: inherit;
+        background: #feffed;
+        background-image: url(../img/vintageherofinalcaption.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center
+    }
+    .hero-area .caption {
+        position: absolute;
+        text-align: center;
+        left: 50%;
+        bottom: 10%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-around
+    }
+    .hero-area .caption h2 {
+        letter-spacing: 0;
+        color: #9e8477;
+        font-family: Palm-Canyon, cursive;
+        text-shadow: none;
+        font-size: 3rem;
+        font-weight: 400
+    }
+    .main-menu {
+        width: 20%;
+        right: 0;
+        padding-top: 10%;
+        background-size: 41%;
+        background-position: 65% 65%;
+        box-shadow: -1px 0 1px 0 #696969;
+        height: 100vh;
+        display: none
+    }
+    .main-menu .options-container {
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: calc(1vw + 1.4rem);
+        padding-left: 0;
+        margin-bottom: 150%;
+        display: none
+    }
+    .main-menu .options-container li {
+        height: calc(1vw + 1.4rem);
+        font-weight: 700;
+        display: none
+    }
+    .active {
+        opacity: 1!important;
+        transform: translate(0, 0)!important
+    }
+    .page-copy {
+        grid-row: 2;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-image: unset;
+        background: #fafafa;
+        padding: 5rem
+    }
+    .page-copy .features-container {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 5rem
+    }
+    .page-copy .features-container .feature {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%
+    }
+    .page-copy .features-container .feature img {
+        width: 50%
+    }
+    .page-copy .features-container .feature h3 {
+        font-weight: 600
+    }
+    .page-copy .features-container .feature p {
+        margin-top: 2rem;
+        line-height: 1.5
+    }
+    .page-copy .features-container .style-two {
+        border: 0;
+        height: 1px;
+        width: 75%;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0));
+        margin-bottom: 5rem
+    }
+    .page-copy .features-container button {
+        border: 1px solid #4c535a;
+        padding: 1.25rem 3rem;
+        font-size: 1.25rem;
+        cursor: pointer;
+        color: #363b40;
+        background: rgba(76, 83, 90, .1);
+        display: flex;
+        flex-flow: column;
+        justify-content: center
+    }
+    .testimonials {
+        display: block;
+        grid-row: 3;
+        background: url(../img/sarlandmuscles.jpg);
+        background-position: center
+    }
+    .testimonials .overlay .quote-box {
+        width: 80%
+    }
+    .testimonials .overlay .quote-box p {
+        font-size: 1.2rem
+    }
+    .testimonials .overlay .quote-box cite {
+        font-size: 1.4rem
+    }
+    footer {
+        height: inherit;
+        grid-row: 4
+    }
+}
+
+@media only screen and (min-width:62em) {
+    :root {
+        background: #fafafa;
+        font-size: calc(1vw + .2rem);
+        font-family: brandon-grotesque, sans-serif;
+        color: #fff;
+        box-sizing: border-box;
+        --h1-size: 2.5rem;
+        --h2-size: 2rem;
+        --h3-size: 1.5rem;
+        --h4-size: 1.2rem
+    }
+    .slideBodyOver {
+        transform: translateX(-20%)
+    }
+    .main-menu {
+        -webkit-transform: translate(100%, 0);
+        transform: translate(100%, 0)
+    }
+    .slide-in {
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        overflow: hidden
+    }
+    .noScroll {
+        overflow: auto
+    }
+    .bodyframe {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100vh auto 60vh 30vh;
+        -moz-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out
+    }
+    header {
+        width: 100%;
+        height: 12vh;
+        background: #6196a1;
+        position: fixed;
+        top: 0;
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-end;
+        align-items: center
+    }
+    header .icon {
+        display: none
+    }
+    header .icon .hamburger {
+        display: none
+    }
+    header .icon .hamburger::before {
+        display: none
+    }
+    header .icon .hamburger::after {
+        display: none
+    }
+    header .logo-container {
+        left: 10%
+    }
+    header .logo-container img {
+        width: 7rem
+    }
+    header nav {
+        display: block;
+        width: 75%
+    }
+    header nav ul {
+        padding-right: 5rem
+    }
+    header nav ul a {
+        display: inline-block;
+        margin-right: 6%;
+        font-size: .9rem;
+        font-family: brandon-grotesque, sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px
+    }
+    header nav ul a:last-of-type {
+        margin-right: 0
+    }
+    .hero-area {
+        grid-row: 1;
+        height: inherit;
+        background: #feffed;
+        background-image: url(../img/vintageherofinalcaption.jpg);
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: center
+    }
+    .hero-area .caption {
+        position: absolute;
+        text-align: center;
+        width: 50%;
+        left: 75%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-around
+    }
+    .hero-area .caption h2 {
+        letter-spacing: 0;
+        margin-bottom: 1rem;
+        color: #9e8477;
+        font-family: Palm-Canyon, cursive;
+        text-shadow: none;
+        font-size: 4rem;
+        font-weight: 400
+    }
+    .main-menu {
+        width: 20%;
+        right: 0;
+        padding-top: 10%;
+        background-size: 41%;
+        background-position: 65% 65%;
+        box-shadow: -1px 0 1px 0 #696969;
+        height: 100vh;
+        display: none
+    }
+    .main-menu .options-container {
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: calc(1vw + 1.4rem);
+        padding-left: 0;
+        margin-bottom: 150%;
+        display: none
+    }
+    .main-menu .options-container li {
+        height: calc(1vw + 1.4rem);
+        font-weight: 700;
+        display: none
+    }
+    .active {
+        opacity: 1!important;
+        transform: translate(0, 0)!important
+    }
+    .page-copy {
+        grid-row: 2;
+        display: flex;
+        flex-flow: column;
+        justify-content: top;
+        align-items: center;
+        background-image: unset;
+        background: #fafafa;
+        padding: 5rem
+    }
+    .page-copy .features-container {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .page-copy .features-container .feature {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: 25%
+    }
+    .page-copy .features-container .feature img {
+        width: 75%
+    }
+    .page-copy .features-container .feature h3 {
+        font-weight: 600
+    }
+    .page-copy .features-container .feature p {
+        margin-top: 2rem;
+        line-height: 1.5
+    }
+    .page-copy .features-container .style-two {
+        border: 0;
+        height: 1px;
+        width: 75%;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .75), rgba(0, 0, 0, 0));
+    }
+    .page-copy .features-container button {
+        border: 1px solid #4c535a;
+        padding: 1.25rem 3rem;
+        font-size: 1.25rem;
+        cursor: pointer;
+        vertical-align: -webkit-baseline-middle;
+        color: #363b40;
+        background: rgba(76, 83, 90, .1);
+        display: flex;
+        flex-flow: column;
+        justify-content: center
+    }
+    .testimonials {
+        display: block;
+        grid-row: 3;
+        background: url(../img/sarlandmuscles.jpg);
+        background-position: center
+    }
+    .testimonials .overlay .quote-box {
+        width: 60%
+    }
+    .testimonials .overlay .quote-box p {
+        font-size: 1.3rem
+    }
+    .testimonials .overlay .quote-box cite {
+        font-size: 1.3rem
+    }
+    footer {
+        height: inherit;
+        grid-row: 4
+    }
+}

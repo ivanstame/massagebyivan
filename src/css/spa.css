@@ -1,0 +1,366 @@
+#map {
+    width: 100%;
+    height: 300px;
+    background-color: grey
+}
+
+#desktop-desc {
+    display: none
+}
+
+#locations .bodyframe {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20vh auto 30vh;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin-top: 15vh
+}
+
+#locations .bodyframe .hero-area {
+    grid-row: 1;
+    background: url(../img/vintagebackmalenowords.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+#locations .bodyframe .hero-area .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700
+}
+
+#locations .locations {
+    grid-row: 2;
+    background-color: #fafafa;
+    color: #302f35;
+    display: flex;
+    flex-flow: column;
+    padding: 3rem 1rem
+}
+
+#locations .locations img:nth-of-type(1) {
+    width: 100%;
+    margin-bottom: 1rem
+}
+
+#locations .locations img:nth-of-type(2) {
+    width: 100%;
+    display: none
+}
+
+#locations .locations .rates {
+    display: table;
+    border-spacing: 2rem
+}
+
+#locations .locations a {
+    color: unset;
+    max-width: 350px
+}
+
+#locations .locations .rates-wrapper {
+    margin-bottom: 3rem
+}
+
+#locations .locations .rates h2 {
+    display: table-caption;
+    font-weight: 600
+}
+
+#locations .locations .rates ul {
+    display: table-row
+}
+
+#locations .locations .rates ul div {
+    display: table-cell;
+    width: 50%
+}
+
+#locations .locations .rates small {
+    display: table-row
+}
+
+#locations .locations h2 {
+    position: relative
+}
+
+#locations .locations div ul {
+    padding: 1rem 0 1rem 1rem
+}
+
+#locations .locations div ul li:not(:first-of-type) {
+    margin-top: .75rem
+}
+
+#locations .locations .hours-wrapper {
+    margin-bottom: 3rem
+}
+
+#locations .locations .hours {
+    display: table;
+    border-spacing: 2rem
+}
+
+#locations .locations .hours h2 {
+    display: table-caption;
+    font-weight: 600
+}
+
+#locations .locations .hours ul {
+    display: table-row
+}
+
+#locations .locations .hours ul div {
+    display: table-cell;
+    width: 50%
+}
+
+#locations .locations small span {
+    font-weight: 600
+}
+
+#locations .locations h2 {
+    position: relative
+}
+
+#locations .locations .directions {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2rem;
+    margin-bottom: 3rem
+}
+
+#locations .locations .directions h2 {
+    display: table-caption;
+    font-weight: 600
+}
+
+#locations .locations .directions .address-box {
+    display: table;
+    border-collapse: separate;
+    border-spacing: .75rem 0;
+    line-height: 1.25;
+    margin-bottom: 3rem
+}
+
+#locations .locations .directions .address-box i {
+    display: table-cell
+}
+
+#locations .locations .directions .address-box a {
+    display: table-cell
+}
+
+#locations footer {
+    grid-row: 3
+}
+
+.call-drift {
+    color: #387c7e;
+    font-weight: 700
+}
+
+.call-drift:visited {
+    color: #387c7e
+}
+
+.call-drift:link {
+    color: #387c7e
+}
+
+@media only screen and (min-width:38em) and (orientation:landscape) {
+    #locations .bodyframe {
+        grid-template-rows: 30vh auto 30vh!important
+    }
+    #locations .locations a {
+        color: unset;
+        padding-left: 0;
+        padding-bottom: 0
+    }
+    #locations .locations div ul li:not(:first-of-type) {
+        margin-top: 0
+    }
+    #locations .locations {
+        grid-row: 2;
+        background-color: #fafafa;
+        color: #302f35;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto
+    }
+    #mobile-desc {
+        display: none
+    }
+    #desktop-desc {
+        display: block;
+    }
+    #locations .locations {
+        padding: 5% 10%
+    }
+    #locations .locations ul li {
+        line-height: 1.5
+    }
+    #locations .locations ul .note {
+        line-height: 2.5
+    }
+    #locations .locations img {
+        grid-column: 1/span 2;
+        grid-row: 1/2
+    }
+    #locations .locations .rates-wrapper {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 100%;
+        margin: 0
+    }
+    #locations .locations .rates h2 {
+        display: table-row;
+        font-weight: 600
+    }
+    #locations .locations .rates-wrapper em {
+        font-style: italic;
+        display: table;
+        border-collapse: separate;
+        border-spacing: 2rem 0rem
+    }
+    a small {
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 2/3
+    }
+    #locations .locations .hours-wrapper {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 100%;
+        margin: 0
+    }
+    #locations .locations .hours h2 {
+        display: table-row;
+        font-weight: 600
+    }
+    #locations .locations .hours-wrapper em {
+        font-style: italic;
+        display: table;
+        border-collapse: separate;
+        border-spacing: 2rem 0rem
+    }
+    #locations .locations .directions {
+        grid-column: 1/span 2;
+        grid-row: 3/4;
+        width: 100%;
+        margin: 0
+    }
+    #locations .locations .directions h2 {
+        display: table-row;
+        font-weight: 600
+    }
+    #locations .locations>div:last-of-type {
+        margin-top: 0
+    }
+}
+
+@media only screen and (min-width:62em) {
+    #locations .locations a {
+        color: unset;
+        padding-left: 0;
+        padding-bottom: 0
+    }
+    #locations .locations div ul li:not(:first-of-type) {
+        margin-top: 0
+    }
+    #locations .locations {
+        grid-row: 2;
+        background-color: #fafafa;
+        color: #302f35;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto
+    }
+    #mobile-desc {
+        display: none
+    }
+    #desktop-desc {
+        display: block;
+    }
+    #locations .bodyframe {
+        margin-top: 12vh;
+        grid-template-rows: 25vh auto 30vh!important
+    }
+    #locations .locations {
+        padding: 5% 20%
+    }
+    #locations .locations ul li {
+        line-height: 1.5
+    }
+    #locations .locations ul .note {
+        line-height: 2.5
+    }
+    #locations .locations img {
+        margin-top: 3rem
+    }
+    #locations .locations img:nth-of-type(1) {
+        grid-column: 1/2;
+        grid-row: 3/4
+    }
+    #locations .locations img:nth-of-type(2) {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        display: block;
+        margin-left: 1rem
+    }
+    #locations .locations .rates-wrapper {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 100%;
+        margin: 0
+    }
+    #locations .locations .rates h2 {
+        display: table-row;
+        font-weight: 600
+    }
+    #locations .locations .rates em {
+        font-style: italic;
+        margin-top: 1rem
+    }
+    a small {
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 2/3
+    }
+    #locations .locations .hours-wrapper {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 100%;
+        margin: 0
+    }
+    #locations .locations .hours h2 {
+        display: table-row;
+        font-weight: 600
+    }
+    #locations .locations .hours-wrapper em {
+        font-style: italic;
+        display: table;
+        border-collapse: separate;
+        border-spacing: 2rem 0rem
+    }
+    #locations .locations .directions {
+        grid-column: 2/3;
+        grid-row: 1/span 2;
+        width: 100%;
+        margin: 0
+    }
+    #locations .locations .directions h2 {
+        display: table-row;
+        font-weight: 600
+    }
+    #locations .locations>div:last-of-type {
+        margin-top: 0
+    }
+}
