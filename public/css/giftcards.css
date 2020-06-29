@@ -50,15 +50,16 @@ strong {
     grid-row: 2;
     background-color: #fafafa;
     color: #302f35;
-    padding: 50px 0;
+    padding: 50px 15%;
 }
 
 #giftcards .giftcards-description .wrapper {
-    padding: 50px 20%;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    padding: 0;
 }
 
 #giftcards .giftcards-description .wrapper .cards-container {
@@ -66,11 +67,16 @@ strong {
     flex-flow: row;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 
 } 
 
-#giftcards .giftcards-description .wrapper .cards-container .gc-card {
-    flex: 1 1 500px;
+#giftcards .giftcards-description .wrapper .cards-container a{
+    flex: 1 1 450px;
+}
+
+
+#giftcards .giftcards-description .wrapper .cards-container a .gc-card {
     padding: 25px 0 75px 0;
     background: #fff;
     color: #302f35;
@@ -83,21 +89,21 @@ strong {
     margin: 25px 50px;
 }
 
-#giftcards .giftcards-description .wrapper .cards-container .gc-card:hover {
+#giftcards .giftcards-description .wrapper .cards-container a .gc-card:hover {
     box-shadow: 1px 1px 5px 4px #6196a1;
     cursor: pointer;
     background: #FEFFED;
 }
 
-#giftcards .giftcards-description .wrapper .cards-container .gc-card .img-wrapper{
+#giftcards .giftcards-description .wrapper .cards-container a .gc-card .img-wrapper{
     width: 50%;
 }
 
-#giftcards .giftcards-description .wrapper .cards-container .gc-card .img-wrapper img{
+#giftcards .giftcards-description .wrapper .cards-container a .gc-card .img-wrapper img{
     width: 100%;
 }
 
-#giftcards .giftcards-description .wrapper .cards-container .gc-card h3{
+#giftcards .giftcards-description .wrapper .cards-container a .gc-card h3{
     text-transform: capitalize;
     padding: 0 10px;
 }
@@ -128,4 +134,3 @@ strong {
     }
 
 }
-

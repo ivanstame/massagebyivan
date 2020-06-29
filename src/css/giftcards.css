@@ -50,7 +50,7 @@ strong {
     grid-row: 2;
     background-color: #fafafa;
     color: #302f35;
-    padding: 50px 20%;
+    padding: 50px 15%;
 }
 
 #giftcards .giftcards-description .wrapper {
@@ -58,6 +58,8 @@ strong {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    padding: 0;
 }
 
 #giftcards .giftcards-description .wrapper .cards-container {
@@ -69,8 +71,12 @@ strong {
 
 } 
 
+#giftcards .giftcards-description .wrapper .cards-container a{
+    flex: 1 1 450px;
+}
+
+
 #giftcards .giftcards-description .wrapper .cards-container a .gc-card {
-    flex: 1 1 500px;
     padding: 25px 0 75px 0;
     background: #fff;
     color: #302f35;
