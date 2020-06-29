@@ -91,9 +91,10 @@ ul {
 }
 
 .bodyframe {
+    margin-top:15vh;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 100vh auto 60vh 30vh;
+    grid-template-rows: 85vh auto 60vh 30vh;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out
 }
@@ -257,9 +258,9 @@ header nav {
 }
 
 .hero-area {
-    background: #feffed url(../img/vintageherofinalcaptionmobile.jpg);
+    background: #feffed url(../img/july_hero_mobile.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center
 }
 
@@ -562,7 +563,7 @@ footer .intouch {
         grid-row: 1;
         height: inherit;
         background: #feffed;
-        background-image: url(../img/vintageherofinalcaption.jpg);
+        background-image: url(../img/july_hero_desktop.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center
@@ -719,9 +720,10 @@ footer .intouch {
         overflow: auto
     }
     .bodyframe {
+        margin-top: 12vh;
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 100vh auto 60vh 30vh;
+        grid-template-rows: 88vh auto 60vh 30vh;
         -moz-transition: all .2s ease-in-out;
         transition: all .2s ease-in-out
     }
@@ -777,10 +779,10 @@ footer .intouch {
         grid-row: 1;
         height: inherit;
         background: #feffed;
-        background-image: url(../img/vintageherofinalcaption.jpg);
+        background-image: url(../img/july_hero_desktop.png);
         background-repeat: no-repeat;
-        background-size: 90%;
-        background-position: center
+        background-size: cover;
+        background-position: bottom;
     }
     .hero-area .caption {
         position: absolute;

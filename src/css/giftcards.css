@@ -118,9 +118,6 @@ strong {
     #giftcards .bodyframe {
         grid-template-rows: 30vh auto 30vh
     }
-    #giftcards .giftcards-description .wrapper {
-        padding: 5% 10%
-    }
 }
 
 @media only screen and (min-width:62em) {
