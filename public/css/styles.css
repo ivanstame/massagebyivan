@@ -4,6 +4,10 @@
     src: url(fonts/PalmCanyonDrive.otf) format('opentype')
 }
 
+strong {
+    font-weight: 600;
+}
+
 :root {
     background: #fafafa;
     font-size: calc(1vw + .6rem);
@@ -316,6 +320,7 @@ header nav {
 
 .page-copy .promotions ul {
     font-size: 1.25rem;
+    text-transform: lowercase;
 }
 
 .page-copy .promotions ul li:not(:last-child){
@@ -378,7 +383,7 @@ header nav {
 .testimonials {
     display: block;
     grid-row: 3;
-    background: url(../img/sarlandmuscles.jpg?cbh=527a15868db17124f410a3c8b80127f8);
+    background: url(../img/sketchvignette.jpeg);
     background-position: center
 }
 
@@ -709,7 +714,7 @@ footer .intouch {
     .testimonials {
         display: block;
         grid-row: 3;
-        background: url(../img/sarlandmuscles.jpg?cbh=527a15868db17124f410a3c8b80127f8);
+        background: url(../img/sketchvignette.jpeg);
         background-position: center
     }
     .testimonials .overlay .quote-box {
@@ -946,7 +951,7 @@ footer .intouch {
     .testimonials {
         display: block;
         grid-row: 3;
-        background: url(../img/sarlandmuscles.jpg?cbh=527a15868db17124f410a3c8b80127f8);
+        background: url(../img/sketchvignette.jpeg);
         background-position: center
     }
     .testimonials .overlay .quote-box {
