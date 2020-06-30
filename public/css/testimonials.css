@@ -56,10 +56,20 @@
 }
 
 #testimonials .testimonials ul li blockquote {
-    background: #f2f2f2;
-    padding: 20px 40px;
+    padding: 40px;
     border-radius: 6px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, .3)
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+    padding-top: 70px;
+}
+
+#testimonials .testimonials ul li:nth-child(even) blockquote {
+    background: url("../img/sarlandmuscleslight.png?cbh=1d3fd3f6ab5a6cd5752f771fc761480e");
+    background-size: cover;
+}
+
+#testimonials .testimonials ul li:nth-child(odd) blockquote {
+    background: url("../img/sarlandboneslight.png?cbh=1a319644b76ff6b903880ddb41a8b4e0");
+    background-size: cover;
 }
 
 #testimonials .testimonials ul li blockquote img {
