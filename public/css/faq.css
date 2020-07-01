@@ -1,0 +1,147 @@
+strong {
+    font-weight: 600;
+}
+
+dt {
+    margin-bottom: 2rem;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 700
+}
+
+dt::after {
+    position: absolute;
+    display: block;
+    content: '';
+    background: #387c7e;
+    height: 2px;
+    width: 30%;
+    top: 150%
+}
+
+dd {
+    font-family: adobe-caslon-pro, serif;
+    line-height: 1.5;
+    margin-bottom: 2rem
+}
+
+.call-me {
+    color: #387c7e
+}
+
+.call-me:visited {
+    color: #387c7e
+}
+
+.call-me:link {
+    color: #387c7e
+}
+
+#faq body {
+    overflow-x: hidden
+}
+
+#faq .bodyframe {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20vh auto 30vh;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin-top: 15vh
+}
+
+#faq .bodyframe .hero-area {
+    grid-row: 1;
+    background: url("../img/sketchvignette.jpeg");
+    background-repeat: no-repeat no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+#faq .bodyframe .hero-area .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700
+}
+
+#faq .faq-description {
+    grid-row: 2;
+    background-color: #fafafa;
+    color: #302f35;
+    text-align: left
+}
+
+#faq .faq-description .wrapper {
+    padding: 50px 10%
+}
+
+#faq .faq-description .wrapper img {
+    width: 100%;
+    margin-bottom: 2rem;
+    box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.2)
+}
+
+#faq .faq-description .wrapper h1{
+    margin-bottom: 2rem;
+    text-transform: lowercase;
+    font-size: 1.25rem;
+}
+
+#faq .faq-description .wrapper dl dt dd ul {
+    padding-left: 2rem;
+}
+
+#waiver-link {
+    color: #6196a1;
+}
+
+#faq footer {
+    grid-row: 3
+}
+
+@media only screen and (min-width:30.1em) and (orientation:landscape) {
+    #faq .bodyframe {
+        grid-template-rows: 30vh auto 30vh
+    }
+    #faq .faq-description .wrapper {
+        padding: 5% 10%
+    }
+}
+
+@media only screen and (min-width:62em) {
+    #faq .bodyframe {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 25vh auto 30vh;
+        -moz-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        margin-top: 12vh
+    }
+    #faq .faq-description {
+        padding: 5% 20%
+    }
+    #faq .faq-description .wrapper {
+        padding: 0
+    }
+    dt {
+        font-size: 1.2rem;
+        font-weight: 700
+    }
+    #faq .faq-description .wrapper img {
+        width: 50%;
+        float: right;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.2)
+    }
+    #faq .faq-description .wrapper h1{
+        margin-bottom: 4rem;
+        font-size: 2rem;
+    }
+}
+

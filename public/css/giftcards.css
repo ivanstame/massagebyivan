@@ -1,0 +1,133 @@
+strong {
+    font-weight: 600;
+}
+
+.call-me {
+    color: #387c7e
+}
+
+.call-me:visited {
+    color: #387c7e
+}
+
+.call-me:link {
+    color: #387c7e
+}
+
+#giftcards body {
+    overflow-x: hidden
+}
+
+#giftcards .bodyframe {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20vh auto 30vh;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin-top: 15vh
+}
+
+#giftcards .bodyframe .hero-area {
+    grid-row: 1;
+    background: url("../img/sketchvignette.jpeg");
+    background-repeat: no-repeat no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+#giftcards .bodyframe .hero-area .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700
+}
+
+#giftcards .giftcards-description {
+    grid-row: 2;
+    background-color: #fafafa;
+    color: #302f35;
+    padding: 50px 15%;
+}
+
+#giftcards .giftcards-description .wrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+#giftcards .giftcards-description .wrapper .cards-container {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+} 
+
+#giftcards .giftcards-description .wrapper .cards-container a{
+    flex: 1 1 450px;
+}
+
+
+#giftcards .giftcards-description .wrapper .cards-container a .gc-card {
+    padding: 25px 0 75px 0;
+    background: #fff;
+    color: #302f35;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    transition: .25s all ease-in-out;
+    box-shadow: 1px 1px 5px 2px rgba(0,0,0,0.3);
+    margin: 25px 50px;
+}
+
+#giftcards .giftcards-description .wrapper .cards-container a .gc-card:hover {
+    box-shadow: 1px 1px 5px 4px #6196a1;
+    cursor: pointer;
+    background: #FEFFED;
+}
+
+#giftcards .giftcards-description .wrapper .cards-container a .gc-card .img-wrapper{
+    width: 50%;
+}
+
+#giftcards .giftcards-description .wrapper .cards-container a .gc-card .img-wrapper img{
+    width: 100%;
+}
+
+#giftcards .giftcards-description .wrapper .cards-container a .gc-card h3{
+    text-transform: capitalize;
+    padding: 0 10px;
+}
+
+
+
+#giftcards footer {
+    grid-row: 3
+}
+
+@media only screen and (min-width:30.1em) and (orientation:landscape) {
+    #giftcards .bodyframe {
+        grid-template-rows: 30vh auto 30vh
+    }
+}
+
+@media only screen and (min-width:62em) {
+    #giftcards .bodyframe {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 25vh auto 30vh;
+        -moz-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        margin-top: 12vh
+    }
+
+}
