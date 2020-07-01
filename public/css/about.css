@@ -66,7 +66,8 @@
 #about .style-description .wrapper p {
     white-space: normal;
     margin-bottom: 1rem;
-    line-height: 1.2
+    line-height: 1.5;
+    font-family: adobe-caslon-pro, serif; 
 }
 
 #about .style-description .wrapper button {
@@ -97,7 +98,7 @@
         grid-template-rows: 30vh auto 30vh
     }
     #about img{
-        width: 50%;
+        width: 45%;
         float: right;
         padding-left: 2rem;
         padding-bottom: 2rem;

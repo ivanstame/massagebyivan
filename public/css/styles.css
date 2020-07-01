@@ -34,7 +34,8 @@ body {
 }
 
 a {
-    text-decoration: none
+    text-decoration: none;
+    cursor: pointer;
 }
 
 a:link {
@@ -357,7 +358,8 @@ header nav {
 
 .page-copy .features-container .feature p {
     margin-top: 2rem;
-    line-height: 1.5
+    line-height: 1.5;
+    font-family: adobe-caslon-pro, serif; 
 }
 
 .style-two {
@@ -406,7 +408,7 @@ header nav {
 }
 
 .testimonials .overlay .quote-box img {
-    width: 2rem;
+    width: 1rem;
     float: left;
     padding: 0 10px 0 0
 }
@@ -416,7 +418,8 @@ header nav {
     line-height: 1.75;
     padding-top: 1rem;
     font-size: 1.05rem;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+    font-family: adobe-caslon-pro, serif; 
 }
 
 .testimonials .overlay .quote-box cite {
@@ -425,7 +428,8 @@ header nav {
     white-space: nowrap;
     text-align: right;
     color: #fafafa;
-    font-style: italic
+    font-style: italic;
+    font-family: adobe-caslon-pro, serif; 
 }
 
 .testimonials .overlay .quote-link-box a h4 {
