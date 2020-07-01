@@ -310,7 +310,9 @@ header nav {
 }
 
 .page-copy .promotions {
-  margin-bottom: 6rem;
+    padding-bottom: 6rem;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    margin-bottom: 4rem;
 }
 
 .page-copy .promotions h3 {
@@ -349,7 +351,7 @@ header nav {
 }
 
 .page-copy .features-container .feature img {
-    width: 75%
+    width: 50%
 }
 
 .page-copy .features-container .feature h3 {
@@ -655,7 +657,7 @@ footer .intouch {
         padding: 5rem
     }
     .page-copy .promotions {
-        margin-bottom: 8rem;
+
       }
       
       .page-copy .promotions h3 {
@@ -891,9 +893,10 @@ footer .intouch {
         background: #fafafa;
         padding: 5rem
     }
-    .page-copy .promotions {
-        margin-bottom: 8rem;
-      }
+.page-copy .promotions {
+    padding-bottom: 6rem;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
       
       .page-copy .promotions h3 {
         display: table-cell;

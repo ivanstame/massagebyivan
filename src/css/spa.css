@@ -60,6 +60,11 @@
     border-spacing: 2rem
 }
 
+#locations .locations ul li {
+    line-height: 1.5;
+    font-family: adobe-caslon-pro, serif;
+}
+
 #locations .locations a {
     color: unset;
     max-width: 350px
