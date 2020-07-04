@@ -99,7 +99,7 @@ ul {
     margin-top:15vh;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 75vh auto 60vh 30vh;
+    grid-template-rows: 85vh auto 60vh 30vh;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out
 }
@@ -263,7 +263,7 @@ header nav {
 }
 
 .hero-area {
-    background: #feffed url(../img/new_hero.jpg);
+    background: #feffed url(../img/althero2final.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center
@@ -592,7 +592,7 @@ footer .intouch {
         grid-row: 1;
         height: inherit;
         background: #feffed;
-        background-image: url(../img/new_hero.jpg);
+        background-image: url(../img/althero2final.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center
@@ -827,7 +827,7 @@ footer .intouch {
         grid-row: 1;
         height: inherit;
         background: #feffed;
-        background-image: url(../img/new_hero.jpg);
+        background-image: url(../img/althero2final.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
