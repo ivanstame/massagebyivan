@@ -263,7 +263,7 @@ header nav {
 }
 
 .hero-area {
-    background: #feffed url(../img/althero3.jpg);
+    background: #feffed url(../img/finaltest.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center
@@ -592,7 +592,7 @@ footer .intouch {
         grid-row: 1;
         height: inherit;
         background: #feffed;
-        background-image: url(../img/althero3.jpg);
+        background-image: url(../img/finaltest.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center
@@ -827,7 +827,7 @@ footer .intouch {
         grid-row: 1;
         height: inherit;
         background: #feffed;
-        background-image: url(../img/althero3.jpg);
+        background-image: url(../img/finaltest.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
