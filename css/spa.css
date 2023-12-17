@@ -1,0 +1,396 @@
+
+p {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+section h2:nth-of-type(2) {
+    margin-top: 3rem;
+}
+
+.hours {
+    margin-top: 3rem;
+}
+#map {
+    width: 100%;
+    height: 300px;
+    background-color: grey
+}
+
+#desktop-desc {
+    display: none
+}
+
+#locations .bodyframe {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20vh auto auto auto auto 30vh;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin-top: 13vh;
+    color: #35474e;
+}
+
+#locations .bodyframe .hero-area {
+    grid-row: 1;
+    background: url(../img/sketchvignette.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+#locations .bodyframe .hero-area .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+}
+
+#locations .locations {
+    grid-row: 3;
+    background-color: #fafafa;
+    color: #302f35;
+    display: flex;
+    flex-flow: column;
+    padding: 3rem 1rem
+}
+
+
+.price-table {
+    max-width: 100%; /* Ensures the table doesn't exceed the width of the screen */
+    margin: 0 auto; /* Centers the table */
+    padding: 20px; /* Adds space around the content */
+    box-sizing: border-box; /* Ensures padding doesn't add to the total width */
+}
+
+.price-table h3 {
+    text-align: center; /* Centers the heading */
+    margin-bottom: 15px; /* Adds space below the heading */
+    font-size: 1.25rem; /* Adjusts the font size for mobile readability */
+}
+
+.price-table p {
+    font-size: 0.9rem;
+    font-family: 'Merriweather-LightItalic', serif;
+    margin-bottom: 1rem;
+}
+
+.price-table table {
+    width: 100%; /* Table takes the full width of its container */
+    border-collapse: collapse; /* Removes space between borders */
+}
+
+.price-table td {
+    padding: 10px; /* Adds padding inside each table cell */
+    border: 1px solid #ddd; /* Adds a light border for each cell */
+    text-align: left; /* Aligns text to the left */
+}
+
+@media screen and (max-width: 600px) {
+    .price-table h3 {
+        font-size: 1.3rem; /* Smaller font size on very small screens */
+    }
+
+    .price-table td {
+        padding: 8px; /* Less padding on smaller screens */
+    }
+}
+
+
+#locations .locations .directions {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2rem;
+    margin-bottom: 3rem
+}
+
+#locations .locations .directions h2 {
+    display: table-caption;
+    font-weight: 600
+}
+
+#locations .locations .directions .address-box {
+    display: table;
+    border-collapse: separate;
+    border-spacing: .75rem 0;
+    line-height: 1.25;
+    margin-bottom: 3rem
+}
+
+#locations .locations .directions .address-box i {
+    display: table-cell
+}
+
+#locations .locations .directions .address-box a {
+    display: table-cell
+}
+
+#locations footer {
+    grid-row: 6;
+}
+
+.call-drift {
+    color: #387c7e;
+    font-weight: 700
+}
+
+.call-drift:visited {
+    color: #387c7e
+}
+
+.call-drift:link {
+    color: #387c7e
+}
+
+@media only screen and (min-width:38em) and (orientation:landscape) {
+    #locations .bodyframe {
+        grid-template-rows: 30vh auto auto auto!important;
+    }
+    #locations .locations a {
+        color: unset;
+        padding-left: 0;
+        padding-bottom: 0
+    }
+    #locations .locations div ul li:not(:first-of-type) {
+        margin-top: 0
+    }
+    #locations .locations {
+        background-color: #fafafa;
+        color: #302f35;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto
+    }
+    #mobile-desc {
+        display: none
+    }
+    #desktop-desc {
+        display: block;
+    }
+    #locations .locations {
+        padding: 5% 10%
+    }
+    #locations .locations ul li {
+        line-height: 1.5
+    }
+    #locations .locations ul .note {
+        line-height: 2.5
+    }
+    #locations .locations img {
+        grid-column: 1/span 2;
+        grid-row: 1/2
+    }
+    #locations .locations .rates-wrapper {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 100%;
+        margin: 0
+    }
+    #locations .locations .rates h2 {
+        display: table-row;
+        font-weight: 600
+    }
+    #locations .locations .rates-wrapper em {
+        font-style: italic;
+        display: table;
+        border-collapse: separate;
+        border-spacing: 2rem 0rem
+    }
+    a small {
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 2/3
+    }
+    #locations .locations .hours-wrapper {
+        grid-column: 2/3; /* Changed */
+        grid-row: 2/3;    /* Changed */
+        width: 100%;
+        margin: 0
+    }
+    #locations .locations .hours h2 {
+        display: table-row;
+        font-weight: 600
+    }
+    #locations .locations .hours-wrapper em {
+        font-style: italic;
+        display: table;
+        border-collapse: separate;
+        border-spacing: 2rem 0rem
+    }
+    #locations .locations .directions {
+        grid-column: 1/2;    /* Changed */
+        grid-row: 2/3;       /* Changed */
+        width: 100%;
+        margin: 0
+    }
+    #locations .locations .directions h2 {
+        display: table-row;
+        font-weight: 600
+    }
+    #locations .locations>div:last-of-type {
+        margin-top: 0
+    }
+}
+
+@media only screen and (min-width:62em) {
+    #locations .locations a {
+        color: unset;
+        padding-left: 0;
+        padding-bottom: 0
+    }
+    #locations .locations div ul li:not(:first-of-type) {
+        margin-top: 0
+    }
+    #locations .locations {
+        background-color: #fafafa;
+        color: #302f35;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto
+    }
+    #mobile-desc {
+        display: none
+    }
+    #desktop-desc {
+        display: block;
+    }
+    #locations .bodyframe {
+        margin-top: 12vh;
+        grid-template-rows: 25vh auto auto 30vh!important
+    }
+    #locations .locations {
+        padding: 5% 20%
+    }
+    #locations .locations ul li {
+        line-height: 1.5
+    }
+    #locations .locations ul .note {
+        line-height: 2.5
+    }
+    #locations .locations img {
+        margin-top: 3rem
+    }
+    #locations .locations img:nth-of-type(1) {
+        grid-column: 1/2;
+        grid-row: 3/4
+    }
+    #locations .locations img:nth-of-type(2) {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        display: block;
+        margin-left: 1rem
+    }
+    #locations .locations .rates-wrapper {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 100%;
+        margin: 0
+    }
+    #locations .locations .rates h2 {
+        display: table-row;
+        font-weight: 600
+    }
+    #locations .locations .rates em {
+        font-style: italic;
+        margin-top: 1rem
+    }
+    a small {
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 2/3
+    }
+    #locations .locations .hours-wrapper {
+        grid-column: 2/3; /* Changed */
+        grid-row: 1/2;    /* Changed */
+        width: 100%;
+        margin: 0
+    }
+    #locations .locations .hours h2 {
+        display: table-row;
+        font-weight: 600
+    }
+    #locations .locations .hours-wrapper em {
+        font-style: italic;
+        display: table;
+        border-collapse: separate;
+        border-spacing: 2rem 0rem
+    }
+    #locations .locations .directions {
+        grid-column: 1/2;    /* Changed */
+        grid-row: 2/3;       /* Changed */
+        width: 100%;
+        margin: 0
+    }
+    #locations .locations .directions h2 {
+        display: table-row;
+        font-weight: 600
+    }
+    #locations .locations>div:last-of-type {
+        margin-top: 0
+    }
+}
+
+.carousel {
+    position: relative;
+    margin: 20px 0;
+}
+
+.carousel-images {
+    overflow: hidden;
+}
+
+.carousel-images img {
+    width: 100%;
+    display: none; /* Hide all images initially */
+}
+
+.carousel-images img:first-of-type {
+    display: block; /* Show only the first image */
+}
+
+.carousel .prev,
+.carousel .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.carousel .prev {
+    left: 10px;
+}
+
+.carousel .next {
+    right: 10px;
+}
+
+main{
+    padding: 10%;
+}
+
+.push-next-sec-down {
+    padding-bottom: 10%;
+}
+
+.ft-contact {
+    color: white;
+}
+
+footer #copyright {
+    color: white;
+}

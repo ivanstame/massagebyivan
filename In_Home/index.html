@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>In-Home Massage</title>
+    <link rel="icon" href="invoicelogo.ico">
+    <link rel="stylesheet" href="https://use.typekit.net/ndh3jjg.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/reset.css?cbh=9e41060781703b7b6492b418708f2ef3">
+    <link rel="stylesheet" href="../css/styles.css?cbh=180c0ef1b278e38d3aa65d3410727275">
+    <link rel="stylesheet" href="../css/inhome.css?cbh=2ea7ec6dafa719fd13f365b0e5c893dc">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="../"><img src="../img/mobilewhitelogo3.png"></a>
+        </div>
+        <div class="icon">
+            <div class="hamburger"></div>
+        </div>
+<nav>
+    <ul>
+        <li><a href="../About">About Me</a></li>
+        <li class="dropdown">
+            <a href="#" id="locationsLink">Locations</a>
+            <ul class="dropdown-content">
+                <li><a href="../HuntingtonBeach">Huntington Beach</a></li>
+                <li><a href="../LagunaBeach">Laguna Beach</a></li>
+            </ul>
+        </li>
+        <li><a href="#">In-Home Massage</a></li>
+        <li><a href="../Testimonials">Testimonials</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <div class="main-menu">
+        <ul class="options-container">
+            <li class="background"><a href="../">Home</a></li>
+            <li class="background"><a href="../About">About Me</a></li>
+            <li class="background"><a href="#" id="locationsLink2">Locations</a></li>
+            <li class="background submenu" id="hbBeach"><a href="../HuntingtonBeach">Huntington Beach</a></li>
+            <li class="background submenu" id="lagunaBeach"><a href="../LagunaBeach">Laguna Beach</a></li>
+            <li class="background"><a href="#">In-Home Massage</a></li>
+            <li class="background"><a href="../Testimonials">Testimonials</a></li>
+        </ul>
+    </div>
+    <div id="inhome">
+        <div class="bodyframe">
+            <section class="hero-area">
+                <div class="overlay">
+                    <h1>IN-HOME MASSAGE</h1></div>
+            </section>
+             <section class="inhome-description">
+                <div class="wrapper">
+                    <dl>
+                        <dt><h3>Embrace the Comfort of In-Home Massage</h3> </dt>
+                        <dd>Experience the ultimate relaxation in the most comfortable setting possible: your own home. I bring the essence of a spa experience directly to you, complete with soothing candles, customized aromatherapy, warm towels, and your preferred musical ambiance. Imagine concluding a deeply relaxing massage session by simply drifting into sleep or unwinding in a warm bath, all without the need to travel back home.</dd>
+                        
+                        <dt><h3>What To Expect for Massage in Your Own Sanctuary</h3></dt>
+                        <dd>Upon scheduling an appointment, I'll arrive at your home about 15 minutes early to set up the perfect massage environment. This setup includes a professional massage table, towel warmer, and ambient candles (battery-operated for safety). Before we begin, we'll have a brief consultation to understand your specific needs and preferences. After which, I'll step aside to wash my hands, giving you privacy to settle in comfortably.</dd>
+                        
+                        <dt><h3>Serving Your Local Area</h3></dt>
+                        <dd>My services are primarily available in Orange County and South Los Angeles County. For locations beyond these areas, a nominal additional fee of $50 is applied to each session, accounting for extra travel and time. Please note that a minimum session length of 90 minutes is required for these extended areas.</dd>
+                        
+                        <dt><h3>Transparent Pricing</h3></dt>
+                        <dd>
+                            <ul>
+                                <li>60 minutes: $100</li>
+                                <li>90 minutes: $150</li>
+                                <li>120 minutes: $200</li>
+                                <li>150 minutes: $250</li>
+                            </ul>
+                        </dd>
+                        
+                        <dt><h3>Flexible Scheduling for Your Convenience</h3></dt>
+                        <dd>I generally offer appointments during the evenings. My schedule is dynamic, so I encourage you to reach out with your preferred days and times. I will strive to accommodate your requests to the best of my ability.</dd>
+                        
+                        <dt><h3>Easy Booking Process</h3></dt>
+                        <dd>To schedule your in-home massage experience, please feel free to call or text me at <a href="tel:+1-657-944-8295" class="call-me">(657) 944-8295</a> or send me an email at <a href="mailto:ivan@massagebyivan.com" class="call-me">ivan@massagebyivan.com</a> </a>.</dd>
+                    </dl>
+                </div>
+            </section>
+            <button id="button-container">Book Your Massage Now</button>
+            <div id="bookingFormPopup" style="display:none;">
+                <div class="formCloseButton">X</div>
+                <form id="bookingForm">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter Name">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter Email">
+                    
+                    <label for="sessionType">Session Location</label>
+                    <select id="sessionType">
+                        <option value="in-home">In-Home</option>
+                        <option value="huntingtonbeach">Huntington Beach (Peter's Chiropractic)</option>
+                        <option value="lagunabeach">Laguna Beach (Surf and Sand Resort)</option>
+                    </select>
+                    
+                    <label for="dateRequested">Date Requested</label>
+                    <input type="date" id="dateRequested">
+                    
+                    <label for="timePreference">Time Preference</label>
+                    <select id="timePreference">
+                        <option value="Morning">Morning</option>
+                        <option value="Early Afternoon">Early Afternoon</option>
+                        <option value="Mid-Afternoon">Mid-Afternoon</option>
+                        <option value="Late Afternoon">Late Afternoon</option>
+                        <option value="Evening">Evening</option>
+                    </select>
+                    
+                    <button type="submit">Text To Book</button>
+                    <p class="form-instructions">Upon submission, this form will generate a pre-filled text message addressed to Ivan with the details you've provided. You will have the opportunity to add any additional notes or information before sending the message.</p>
+        
+                </form>
+            </div>
+            <script>
+                    document.getElementById('button-container').addEventListener('click', function() {
+                    document.getElementById('bookingFormPopup').style.display = 'block';
+    });
+            </script>
+        <footer>
+            <div class="ft-content-container">
+                <div class="ft-contact">Connect with Ivan at <a href="tel:+1-657-944-8295" class="intouch">+1 (657) 944-8295</a> or <span><a href="mailto:ivan@massagebyivan.com" class="intouch">ivan@massagebyivan.com</a></span></div>
+                <div id="copyright">
+                    <script language="JavaScript">
+                        <!--
+                        function y2k(number) {
+                            return (number < 1000) ? number + 1900 : number;
+                        }
+                        var today = new Date();
+                        var year = y2k(today.getYear());
+                        document.write('© ' + year + ' Massage by Ivan  - All Rights Reserved');
+                        //-->
+                    </script>
+                </div>
+            </div>
+        </footer>
+            <script type="text/javascript" src="../js/elite.js?cbh=fc22eb779b88c43ad28d109222aa9d59"></script>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+dt {
+    margin-bottom: 2rem;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: BrandonGrotesque-Light, sans-serif;
+}
+
+dt::after {
+    position: absolute;
+    display: block;
+    content: '';
+    background: #387c7e;
+    height: 2px;
+    width: 30%;
+    top: 150%
+}
+
+dd {
+    font-family: Merriweather-Light, serif; 
+    line-height: 1.5;
+    margin-bottom: 2rem
+}
+
+.call-me {
+    color: #387c7e
+}
+
+.call-me:visited {
+    color: #387c7e
+}
+
+.call-me:link {
+    color: #387c7e
+}
+
+#inhome body {
+    overflow-x: hidden
+}
+
+#inhome .bodyframe {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20vh auto 30vh;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin-top: 13vh
+}
+
+#inhome .bodyframe .hero-area {
+    grid-row: 1;
+    background: url(../img/sketchvignette.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+#inhome .bodyframe .hero-area .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+
+#inhome .inhome-description {
+    grid-row: 2;
+    background-color: #fafafa;
+    color: #302f35;
+    text-align: left
+}
+
+#inhome .inhome-description .wrapper {
+    padding: 50px 10%
+}
+
+#inhome .inhome-description .wrapper img {
+    width: 100%
+}
+
+#inhome footer {
+    grid-row: 3
+}
+
+@media only screen and (min-width:30.1em) and (orientation:landscape) {
+    #inhome .bodyframe {
+        grid-template-rows: 30vh auto 30vh
+    }
+    #inhome .inhome-description .wrapper {
+        padding: 5% 10%
+    }
+}
+
+@media only screen and (min-width:62em) {
+    #inhome .bodyframe {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 25vh auto 30vh;
+        -moz-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        margin-top: 12vh
+    }
+    #inhome .inhome-description {
+        padding: 5% 20%
+    }
+    #inhome .inhome-description .wrapper {
+        padding: 0
+    }
+    dt {
+        font-size: 1.2rem;
+        font-weight: 700
+    }
+}

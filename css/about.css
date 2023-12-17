@@ -1,0 +1,120 @@
+#about-image {
+    width: 100%;
+    margin-bottom: 1rem
+}
+
+#about {
+    overflow-x: hidden
+}
+
+#about img{
+  margin-bottom: 2rem;
+}
+
+#about .bodyframe {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20vh auto 30vh;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin-top: 13vh
+}
+
+#about .bodyframe .hero-area {
+    grid-row: 1;
+    background: url(../img/sketchvignette.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+#about .bodyframe .hero-area .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center
+}
+
+#about .bodyframe .hero-area .overlay h1 {
+    font-weight: 400;
+    letter-spacing: .25rem
+}
+
+#about .style-description {
+    grid-row: 2;
+    background-color: #fafafa;
+    color: #302f35;
+    text-align: left
+}
+
+#about .style-description .wrapper {
+    padding: 10% 10%
+}
+
+#about .style-description .wrapper h2 {
+    margin-bottom: 2rem
+}
+
+#about .style-description .wrapper h3 {
+    margin-bottom: 1rem;
+    color: #387c7e
+}
+
+#about .style-description .wrapper p {
+    white-space: normal;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+#about .style-description .wrapper button {
+    border: 1px solid #387c7e;
+    padding: .75rem 1.75rem;
+    font-family: Karla, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    background: #387c7e;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: all .25s ease-in-out;
+    cursor: pointer;
+    margin-top: 1rem
+}
+
+#about footer {
+    grid-row: 3
+}
+
+#about .price-table p {
+    font-family: 'Merriweather-LightItalic', serif;
+    color: red;
+}
+
+@media only screen and (min-width:30.1em) and (orientation:landscape) {
+    #about .style-description {
+        background-color: #fafafa;
+        color: #302f35;
+        text-align: left
+    }
+    #about .bodyframe {
+        grid-template-rows: 30vh auto 30vh
+    }
+    #about img{
+        width: 45%;
+        float: right;
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+      }
+}
+
+@media only screen and (min-width:62em) {
+    #about .bodyframe {
+        margin-top: 12vh;
+        grid-template-rows: 25vh auto 30vh
+    }
+    #about .style-description .wrapper {
+        padding: 5% 20%
+    }
+}

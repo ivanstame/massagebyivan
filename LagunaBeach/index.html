@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="robots" content="noindex">
+    <title>Surf and Sand Resort</title>
+    <link rel="icon" href="invoicelogo.ico">
+    <link rel="stylesheet" href="https://use.typekit.net/ndh3jjg.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/reset.css?cbh=9e41060781703b7b6492b418708f2ef3">
+    <link rel="stylesheet" href="../css/styles.css?cbh=180c0ef1b278e38d3aa65d3410727275">
+    <link rel="stylesheet" href="../css/spa.css?cbh=1400588b317ceb4bb620c947fdb6d913">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="../"><img src="../img/mobilewhitelogo3.png" alt=""></a>
+        </div>
+        <div class="icon">
+            <div class="hamburger"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../About">About Me</a></li>
+                <li class="dropdown">
+                    <a href="#" id="locationsLink">Locations</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../HuntingtonBeach/">Huntington Beach</a></li>
+                        <li><a href="#">Laguna Beach</a></li>
+                    </ul>
+                </li>
+                <li><a href="../In_Home">In-Home Massage</a></li>
+                <li><a href="../Testimonials">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-menu">
+        <ul class="options-container">
+            <li class="background"><a href="../">Home</a></li>
+            <li class="background"><a href="../About">About Me</a></li>
+            <li class="background"><a href="#" id="locationsLink2">Locations</a></li>
+            <li class="background submenu" id="hbBeach"><a href="../HuntingtonBeach/">Huntington Beach</a></li>
+            <li class="background submenu" id="lagunaBeach"><a href="#">Laguna Beach</a></li>
+            <li class="background"><a href="../In_Home">In-Home Massage</a></li>
+            <li class="background"><a href="../Testimonials">Testimonials</a></li>
+        </ul>
+    </div>
+    <div id="locations">
+        <div class="bodyframe">
+            <section class="hero-area">
+                <div class="overlay">
+                    <h1 id="mobile-desc">Laguna Beach</h1>
+                    <h1 id="desktop-desc">Laguna Beach</h1></div>
+            </section>
+            <main>
+            <section class="location-intro push-next-sec-down">
+                <h2>Relax and Rejuvenate in Beautiful Laguna Beach</h2>
+                <p>Elevate Your Massage Experience at Laguna Beach’s Surf and Sand Resort. As a lead therapist at this renowned waterfront property, I offer a thoughtful and skillful approach to massage, ensuring each session is a testament to refined technique and attentive care.</p>
+            </section>
+            <section class="office-description push-next-sec-down">
+                <h2>The Enchanting Setting of the Surf and Sand Resort</h2>
+                <p>Nestled along the scenic coastline of Laguna Beach, the Surf and Sand Resort is more than just a stunning backdrop for a massage session. It's a holistic experience that combines the serene ambiance of the Pacific Ocean with the luxurious amenities of the Aquaterra Spa. As a guest, you'll have access to the spa's tranquil sauna, invigorating steam room, and relaxing jacuzzi. Moreover, the spa offers a variety of body treatments and modalities, allowing you to extend your wellness experience beyond the massage table.</p>
+            </section>
+            <section class="office-photos push-next-sec-down">
+                <h2>Gallery</h2>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="https://www.thosesomedaygoals.com/wp-content/uploads/2019/09/SurfandSandResort_SunsetOverPool.jpg" alt="Image 1">
+                        <img src="http://surfandsand.gcomwebdev.com/wp-content/uploads/2017/05/2017-05-aquaterra-spa-lounge.jpg" alt="Image 2">
+                        <!-- Add more images as needed -->
+                    </div>
+                    <button class="prev">❮</button>
+                    <button class="next">❯</button>
+                </div>
+            </section>
+            <section class="booking-information push-next-sec-down">
+                <h2>Booking Your Laguna Beach Massage</h2>
+                <p>For an unparalleled massage experience at the Surf and Sand Resort, please call the Aquaterra Spa directly at (888) 528-6751. This ensures that you can request a session with me specifically and take advantage of the full range of spa services available. If you have any questions or need further information, feel free to contact me directly at (657) 944-8295. Please note that online booking is available, but it does not guarantee a session with a specific therapist.</p>
+            </section>
+                               
+            <button id="button-container">Book Your Massage Now</button>
+            <div id="bookingFormPopup" style="display:none;">
+                <div class="formCloseButton">X</div>
+                <form id="bookingForm">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter Name">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter Email">
+                    
+                    <label for="sessionType">Session Location</label>
+                    <select id="sessionType">
+                        <option value="in-home">In-Home</option>
+                        <option value="huntingtonbeach">Huntington Beach (Peter's Chiropractic)</option>
+                        <option value="lagunabeach">Laguna Beach (Surf and Sand Resort)</option>
+                    </select>
+                    
+                    <label for="dateRequested">Date Requested</label>
+                    <input type="date" id="dateRequested">
+                    
+                    <label for="timePreference">Time Preference</label>
+                    <select id="timePreference">
+                        <option value="Morning">Morning</option>
+                        <option value="Early Afternoon">Early Afternoon</option>
+                        <option value="Mid-Afternoon">Mid-Afternoon</option>
+                        <option value="Late Afternoon">Late Afternoon</option>
+                        <option value="Evening">Evening</option>
+                    </select>
+                    
+                    <button type="submit">Text To Book</button>
+                    <p class="form-instructions">Upon submission, this form will generate a pre-filled text message addressed to Ivan with the details you've provided. You will have the opportunity to add any additional notes or information before sending the message.</p>
+        
+                </form>
+            </div>
+            <script>
+                    document.getElementById('button-container').addEventListener('click', function() {
+                    document.getElementById('bookingFormPopup').style.display = 'block';
+    });
+            </script>
+            </main>
+            <footer>
+                <div class="ft-content-container">
+                    <div class="ft-contact">Connect with Ivan at <a href="tel:+1-657-944-8295" class="intouch">+1 (657) 944-8295</a> or <span><a href="mailto:ivan@massagebyivan.com" class="intouch">ivan@massagebyivan.com</a></span></div>
+                    <div id="copyright">
+                        <script language="JavaScript">
+                            <!--
+                            function y2k(number) {
+                                return (number < 1000) ? number + 1900 : number;
+                            }
+                            var today = new Date();
+                            var year = y2k(today.getYear());
+                            document.write('© ' + year + ' Massage by Ivan  - All Rights Reserved');
+                            //-->
+                        </script>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/elite.js?cbh=fc22eb779b88c43ad28d109222aa9d59"></script>
+        <script type="text/javascript" src="../js/map.js?cbh=3b89e8c585ff40c883c7a83f416c8192"></script>
+        <script async defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACkuiO8fkW-LADs0jEIAzVgH52ZOlfK4M&callback=initMap"></script>
+    </div>
+</body>
+
+</html>

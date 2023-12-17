@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>About Ivan</title>
+    <link rel="icon" href="invoicelogo.ico">
+    <link rel="stylesheet" href="https://use.typekit.net/ndh3jjg.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/reset.css?cbh=9e41060781703b7b6492b418708f2ef3">
+    <link rel="stylesheet" href="../css/styles.css?cbh=180c0ef1b278e38d3aa65d3410727275">
+    <link rel="stylesheet" href="../css/about.css?cbh=6551c0b3fb41176d4cff6c8a17d04916">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="../"><img src="../img/mobilewhitelogo3.png"></a>
+        </div>
+        <div class="icon">
+            <div class="hamburger"></div>
+        </div>
+<nav>
+    <ul>
+        <li><a href="#">About Me</a></li>
+        <li class="dropdown">
+            <a href="#" id="locationsLink">Locations</a>
+            <ul class="dropdown-content">
+                <li><a href="../HuntingtonBeach">Huntington Beach</a></li>
+                <li><a href="../LagunaBeach">Laguna Beach</a></li>
+            </ul>
+        </li>
+        <li><a href="../In_Home">In-Home Massage</a></li>
+        <li><a href="../Testimonials">Testimonials</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <div class="main-menu">
+        <ul class="options-container">
+            <li class="background"><a href="../">Home</a></li>
+            <li class="background"><a href="#">About Me</a></li>
+            <li class="background"><a href="#" id="locationsLink2">Locations</a></li>
+            <li class="background submenu" id="hbBeach"><a href="../HuntingtonBeach">Huntington Beach</a></li>
+            <li class="background submenu" id="lagunaBeach"><a href="../LagunaBeach">Laguna Beach</a></li>
+            <li class="background"><a href="../In_Home">In-Home Massage</a></li>
+            <li class="background"><a href="../Testimonials">Testimonials</a></li>
+        </ul>
+    </div>
+    <div id="about">
+        <div class="bodyframe">
+            <section class="hero-area">
+                <div class="overlay">
+                    <h1>ABOUT</h1></div>
+            </section>
+            <section class="style-description">
+                <div class="wrapper">
+                    <img src="../img/portrait_new.jpg" id="about-image">
+                    <h2>About Ivan</h2>
+                    <h3>A Blend of Skill, Knowledge, and Passion</h3>
+                    <p>My path to massage mastery began in a setting far from the tranquil confines of a spa. It was in the bustling realm of physical therapy, at an orthopedic rehabilitation center. Here, under the mentorship of Dr. Ed Reynolds - a revered figure in chiropractic and rehabilitation who was trusted by the likes of Wayne Gretzky and the early 1990s Los Angeles Kings - I uncovered the special talent I had in my hands. This wasn't just any clinic; it was a place where I saw a range of conditions, from bulged discs to complex regional pain syndrome, shaping my approach to massage with a scientific precision and artistic flair.</p>
+                    <h3>Philosophy and Approach</h3>
+                    <p>Graduating from the National Holistic Institute in Santa Ana and armed with a philosophy degree from UC Riverside, I've always believed massage is an art as much as it is a science. My philosophy leans on the intricate understanding of pain science, echoing the insights of experts like Paul Ingraham, Dr. John Quintner, and Dr. Lorimer Moseley. Yet, it's the dance – a lifelong passion – that truly defines my approach. Movement and rhythm are essential to my methodology, allowing me to bring a unique dynamic to each session.</p>
+                    <h3>Aspirations and Goals</h3>
+                    <p>Dreams drive us, and mine is clear – to be a champion at the Massage World Championships in Copenhagen. But it's more than just winning; it's about setting a new standard in massage therapy, showcasing the blend of skill, intuition, and innovation that I bring to the table. Post-championship? The goal is to nurture a thriving practice, share knowledge through workshops, and continue transforming the massage experience for clients nationwide.</p>
+                    <h3>In Your Corner</h3>
+                    <p>From the dynamic environment of a high-stakes clinic to my current role at the Surf and Sand Resort, and even within the intimate setting of in-home massages, my ambition remains steadfast - to be the highlight of your day. It's not just about CEOs seeking solace from corporate pressures, busy moms looking for a moment of tranquility, or anyone yearning to rejuvenate their sense of self. My commitment is to you, in all your uniqueness and individuality.
+                    </p>               
+                    <p>Thank you for considering me as your therapist. I look forward to the opportunity to craft a massage experience that's as unique as you are.</p>
+                    <p>Warm regards,<br>Ivan</p>
+                </div>
+            </section>
+            
+            <button id="button-container">Book Your Massage Now</button>
+            <div id="bookingFormPopup" style="display:none;">
+                <div class="formCloseButton">X</div>
+                <form id="bookingForm">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter Name">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter Email">
+                    
+                    <label for="sessionType">Session Location</label>
+                    <select id="sessionType">
+                        <option value="in-home">In-Home</option>
+                        <option value="huntingtonbeach">Huntington Beach (Peter's Chiropractic)</option>
+                        <option value="lagunabeach">Laguna Beach (Surf and Sand Resort)</option>
+                    </select>
+                    
+                    <label for="dateRequested">Date Requested</label>
+                    <input type="date" id="dateRequested">
+                    
+                    <label for="timePreference">Time Preference</label>
+                    <select id="timePreference">
+                        <option value="Morning">Morning</option>
+                        <option value="Early Afternoon">Early Afternoon</option>
+                        <option value="Mid-Afternoon">Mid-Afternoon</option>
+                        <option value="Late Afternoon">Late Afternoon</option>
+                        <option value="Evening">Evening</option>
+                    </select>
+                    
+                    <button type="submit">Text To Book</button>
+                    <p class="form-instructions">Upon submission, this form will generate a pre-filled text message addressed to Ivan with the details you've provided. You will have the opportunity to add any additional notes or information before sending the message.</p>
+        
+                </form>
+            </div>
+            <script>
+                    document.getElementById('button-container').addEventListener('click', function() {
+                    document.getElementById('bookingFormPopup').style.display = 'block';
+    });
+            </script>
+        <footer>
+            <div class="ft-content-container">
+                <div class="ft-contact">Connect with Ivan at <a href="tel:+1-657-944-8295" class="intouch">+1 (657) 944-8295</a> or <span><a href="mailto:ivan@massagebyivan.com" class="intouch">ivan@massagebyivan.com</a></span></div>
+                <div id="copyright">
+                    <script language="JavaScript">
+                        <!--
+                        function y2k(number) {
+                            return (number < 1000) ? number + 1900 : number;
+                        }
+                        var today = new Date();
+                        var year = y2k(today.getYear());
+                        document.write('© ' + year + ' Massage by Ivan  - All Rights Reserved');
+                        //-->
+                    </script>
+                </div>
+            </div>
+        </footer>
+        </div>
+        <script type="text/javascript" src="../js/elite.js?cbh=fc22eb779b88c43ad28d109222aa9d59"></script>
+    </div>
+</body>
+
+</html>

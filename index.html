@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Welcome To Massage by Ivan</title>
+    <link rel="icon" href="invoicelogo.ico">
+    <link rel="stylesheet" href="https://use.typekit.net/ndh3jjg.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css?cbh=9e41060781703b7b6492b418708f2ef3">
+    <link rel="stylesheet" href="css/styles.css?cbh=180c0ef1b278e38d3aa65d3410727275">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="#"><img src="./img/mobilewhitelogo3.png"></a>
+        </div>
+        <div class="icon">
+            <div class="hamburger"></div>
+        </div>
+<nav>
+    <ul>
+        <li><a href="./About">About Me</a></li>
+        <li class="dropdown">
+            <a href="#" id="locationsLink">Locations</a>
+            <ul class="dropdown-content">
+                <li><a href="./HuntingtonBeach">Huntington Beach</a></li>
+                <li><a href="./LagunaBeach">Laguna Beach</a></li>
+            </ul>
+        </li>
+        <li><a href="./In_Home">In-Home Massage</a></li>
+        <li><a href="./Testimonials">Testimonials</a></li>
+    </ul>
+</nav>
+
+    </header>
+    <div class="main-menu">
+        <ul class="options-container">
+            <li class="background"><a href="#">Home</a></li>
+            <li class="background"><a href="./About">About Me</a></li>
+            <li class="background"><a href="#" id="locationsLink2">Locations</a></li>
+            <li class="background submenu" id="hbBeach"><a href="./HuntingtonBeach">Huntington Beach</a></li>
+            <li class="background submenu" id="lagunaBeach"><a href="./LagunaBeach">Laguna Beach</a></li>
+            <li class="background"><a href="./In_Home">In-Home Massage</a></li>
+            <li class="background"><a href="./Testimonials">Testimonials</a></li>
+        </ul>
+    </div>
+    <div class="bodyframe">
+        <section class="hero-area">
+            <video autoplay muted loop playsinline id="heroVideo">
+                <source src="img/demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Add any overlay content here, like text or buttons -->
+        </section>
+        
+        <section class="page-copy">
+            <div class="tranquility-section">
+                 <h1>Hi, I'm Ivan</h1>
+                 <p>A massage therapist with over ten years of experience who utilizes a unique blend of dance-inspired movement and masterful massage techniques inspired by the fluidity of Hawaiian Lomi Lomi and the dynamic versatility of Thai Massage.</p>
+            </div>
+            <div class="features-container">
+                <div class="feature"><img src="./img/stones.svg">
+                    <h2>What to Expect</h2>
+                    <p>My technique is an artful blend of intuition and skill, shaped by years of experience and a deep understanding of pain science and recovery. Each session is more than just a series of strokes; it's a thoughtful dance of hands that responds to the subtle cues of your body, aiming to release tension and restore balance in ways you haven't felt before. Prepare to embark on a journey that transcends the ordinary and brings a new perspective to what massage therapy can achieve for your wellbeing.</p>
+                </div>
+                <div class="feature"><img src="./img/womanontable.svg">
+                    <h2>Flexible Massage Settings</h2>
+                    <ul>
+                        <li>
+                            <h3>In-Home Massage</h3>
+                            <p>Discover the luxury of a massage experience that comes to you, blending a diversity of techniques for a session that's refreshingly different.</p>
+                        </li>
+                        <li>
+                            <h3>Wellness Center Massage in Huntington Beach</h3>
+                            <p>Or visit me at a collaborative wellness center in Huntington Beach, where you'll find a holistic health environment alongside chiropractic, acupuncture, and esthetic services.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button id="button-container">Book Your Massage Now</button>
+            <div id="bookingFormPopup" style="display:none;">
+                <div class="formCloseButton">X</div>
+                <form id="bookingForm">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter Name">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter Email">
+                    
+                    <label for="sessionType">Session Location</label>
+                    <select id="sessionType">
+                        <option value="in-home">In-Home</option>
+                        <option value="huntingtonbeach">Huntington Beach (Peter's Chiropractic)</option>
+                        <option value="lagunabeach">Laguna Beach (Surf and Sand Resort)</option>
+                    </select>
+                    
+                    <label for="dateRequested">Date Requested</label>
+                    <input type="date" id="dateRequested">
+                    
+                    <label for="timePreference">Time Preference</label>
+                    <select id="timePreference">
+                        <option value="Morning">Morning</option>
+                        <option value="Early Afternoon">Early Afternoon</option>
+                        <option value="Mid-Afternoon">Mid-Afternoon</option>
+                        <option value="Late Afternoon">Late Afternoon</option>
+                        <option value="Evening">Evening</option>
+                    </select>
+                    
+                    <button type="submit">Text To Book</button>
+                    <p class="form-instructions">Upon submission, this form will generate a pre-filled text message addressed to Ivan with the details you've provided. You will have the opportunity to add any additional notes or information before sending the message.</p>
+        
+                </form>
+            </div>
+            <script>
+                    document.getElementById('button-container').addEventListener('click', function() {
+                    document.getElementById('bookingFormPopup').style.display = 'block';
+    });
+            </script>
+        </section>
+        <section class="testimonials">
+            <div class="overlay">
+                <div class="quote-box">
+                    <p><img src="./img/openquote1.svg?cbh=0ed1f2c979c893d3e6b8bc10f3bc89ae">Ivan has been one of the best massage therapists I've experienced. He is friendly, listens well and most importantly has a very intuitive touch to address my areas of concern. He's done wonders for my headaches, low back pain and other areas that need my attention. He is the consummate professional, easy to do business with and I would recommend him without any hesitation to others.</p><cite>Richard L.</cite></div>
+                <div class="quote-link-box"><a href="./Testimonials"><h4>View More Testimonials</h4></a></div>
+            </div>
+        </section>
+        <footer>
+            <div class="ft-content-container">
+                <div class="ft-contact">Connect with Ivan at <a href="tel:+1-657-944-8295" class="intouch">+1 (657) 944-8295</a> or <span><a href="mailto:ivan@massagebyivan.com" class="intouch">ivan@massagebyivan.com</a></span></div>
+                <div id="copyright">
+                    <script language="JavaScript">
+                        <!--
+                        function y2k(number) {
+                            return (number < 1000) ? number + 1900 : number;
+                        }
+                        var today = new Date();
+                        var year = y2k(today.getYear());
+                        document.write('© ' + year + ' Massage by Ivan  - All Rights Reserved');
+                        //-->
+                    </script>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="./js/elite.js?cbh=fc22eb779b88c43ad28d109222aa9d59"></script>
+</body>
+
+</html>

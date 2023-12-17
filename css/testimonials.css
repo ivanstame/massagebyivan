@@ -1,0 +1,144 @@
+#testimonials {
+    overflow-x: hidden
+}
+
+#testimonials .bodyframe {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20vh auto 30vh;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin-top: 13vh
+}
+
+#testimonials .bodyframe .hero-area {
+    grid-row: 1;
+    background: url(../img/sketchvignette.jpeg);
+    background-repeat: no-repeat no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+#testimonials .bodyframe .hero-area .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center
+}
+
+#testimonials .bodyframe .hero-area .overlay h1 {
+    font-weight: 400;
+    letter-spacing: .25rem
+}
+
+#testimonials .testimonials {
+    grid-row: 2;
+    background: #fafafa;
+    color: #302f35;
+    text-align: left;
+    padding: 10% 0
+}
+
+#testimonials .testimonials img {
+    width: 100%
+}
+
+#testimonials .testimonials ul {
+    padding: 0 10%
+}
+
+#testimonials .testimonials ul li {
+    line-height: 1.5;
+    margin-bottom: 3rem
+}
+
+#testimonials .testimonials ul li blockquote {
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+    padding-top: 70px;
+ 
+}
+
+#testimonials .testimonials ul li blockquote p {
+    font-family: adobe-caslon-pro, serif;
+    line-height: 1.5;
+}
+
+#testimonials .testimonials ul li:nth-child(even) blockquote {
+    background: url("../img/sarlandmuscleslight.png?cbh=1d3fd3f6ab5a6cd5752f771fc761480e");
+    background-size: cover;
+}
+
+#testimonials .testimonials ul li:nth-child(odd) blockquote {
+    background: url("../img/sarlandboneslight.png?cbh=1a319644b76ff6b903880ddb41a8b4e0");
+    background-size: cover;
+}
+
+#testimonials .testimonials ul li blockquote img {
+    float: left;
+    margin-right: 15px;
+    width: 1rem
+}
+
+#testimonials .testimonials ul li blockquote cite {
+    display: block;
+    text-align: right;
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 1rem;
+    font-family: adobe-caslon-pro, serif; 
+}
+
+#testimonials .testimonials button {
+    border: 1px solid #4c535a;
+    padding: 1.25rem 3rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: #363b40;
+    background: rgba(76, 83, 90, .1);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 0 auto
+}
+
+#testimonials footer {
+    grid-row: 3
+}
+
+@media only screen and (min-width:30.1em) and (orientation:landscape) {
+    #testimonials .bodyframe {
+        grid-template-rows: 30vh auto 30vh
+    }
+}
+
+@media only screen and (min-width:62em) {
+    #testimonials .bodyframe {
+        margin-top: 12vh;
+        grid-template-rows: 25vh auto 30vh
+    }
+    #testimonials .testimonials {
+        padding: 5% 0
+    }
+    #testimonials .testimonials ul {
+        display: grid;
+        grid-template-columns: 1.25fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 2rem
+    }
+    #testimonials .testimonials ul li:nth-of-type(1) {
+        grid-column: 1/2;
+        grid-row: 1
+    }
+    #testimonials .testimonials ul li:nth-of-type(2) {
+        grid-column: 2/3;
+        grid-row: 1
+    }
+    #testimonials .testimonials ul li:last-of-type {
+        grid-column: 1/span 2
+    }
+}
